@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>탭 메뉴 컨텐츠(1) withjQuery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function(){
+      $('.testimonial-pic img').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+
+        $('.testimonial .content').removeClass('active');
+        $('#' + $(this).attr('data-alt')).addClass('active');
+      });
+    });
+  
+  </script>
+</head>
+<body>
+  <div class="testimonial-section">
+    <h1><span>CodingWorks</span> Publishing Online Class with Inflearn</h1>
+    <div class="testimonial-pic">
+      <img class="active" src="img/face-01.jpg" data-alt="tab1">
+      <img src="img/face-02.jpg" data-alt="tab2">
+      <img src="img/face-03.jpg" data-alt="tab3">
+      <img src="img/face-04.jpg" data-alt="tab4">
+    </div>
+    <div class="testimonial">
+      <div class="content active" id="tab1">
+        <p>
+          Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Quod cumque ex vero 
+          asperiores modi nostrum eius repellat 
+          dolor molestiae, laborum itaque debitis!
+          Voluptatem repellat tenetur ipsam a 
+          adipisci facere quibusdam enim sapiente.
+          At praesentium non inventore optio cum 
+          doloremque illum provident sapiente id
+          deleniti eaque facilis iure voluptas 
+          fuga repellendus labore, natus consequuntur
+          voluptatem modi reprehenderit laboriosam enim
+          sint eum suscipit! Perferendis laboriosam 
+          repellendus consequuntur sed rerum cum officiis
+          id illum ut eius, veritatis aperiam, dolores
+          eos dolore corporis consectetur!
+        </p>
+        <p>Sally, Web Desginer</p>
+      </div>
+      <div class="content" id="tab2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Quod cumque ex vero 
+          asperiores modi nostrum eius repellat 
+          dolor molestiae, laborum itaque debitis!
+          Voluptatem repellat tenetur ipsam a 
+          adipisci facere quibusdam enim sapiente.
+          At praesentium non inventore optio cum 
+          doloremque illum provident sapiente id
+          deleniti eaque facilis iure voluptas 
+          fuga repellendus labore, natus consequuntur
+          voluptatem modi reprehenderit laboriosam enim
+          sint eum suscipit! Perferendis laboriosam 
+          repellendus consequuntur sed rerum cum officiis
+          id illum ut eius, veritatis aperiam, dolores
+          eos dolore corporis consectetur!
+        </p>
+        <p>Amy, Graphic Designer</p>
+      </div>
+      <div class="content" id="tab3">
+        <p>
+          Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Quod cumque ex vero 
+          asperiores modi nostrum eius repellat 
+          dolor molestiae, laborum itaque debitis!
+          Voluptatem repellat tenetur ipsam a 
+          adipisci facere quibusdam enim sapiente.
+          At praesentium non inventore optio cum 
+          doloremque illum provident sapiente id
+          deleniti eaque facilis iure voluptas 
+          fuga repellendus labore, natus consequuntur
+          voluptatem modi reprehenderit laboriosam enim
+          sint eum suscipit! Perferendis laboriosam 
+          repellendus consequuntur sed rerum cum officiis
+          id illum ut eius, veritatis aperiam, dolores
+          eos dolore corporis consectetur!
+        </p>
+        <p>Jung Ho, Developer</p>
+      </div>
+      <div class="content" id="tab4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Quod cumque ex vero 
+          asperiores modi nostrum eius repellat 
+          dolor molestiae, laborum itaque debitis!
+          Voluptatem repellat tenetur ipsam a 
+          adipisci facere quibusdam enim sapiente.
+          At praesentium non inventore optio cum 
+          doloremque illum provident sapiente id
+          deleniti eaque facilis iure voluptas 
+          fuga repellendus labore, natus consequuntur
+          voluptatem modi reprehenderit laboriosam enim
+          sint eum suscipit! Perferendis laboriosam 
+          repellendus consequuntur sed rerum cum officiis
+          id illum ut eius, veritatis aperiam, dolores
+          eos dolore corporis consectetur!
+        </p>
+        <p>Chris, Printing Desinger</p>
+      </div>
+      
+    </div>
+  </div>
+    
+</body>
+</html>
